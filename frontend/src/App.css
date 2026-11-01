@@ -1,0 +1,67 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+.container {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #555;
+}
+
+.search-input {
+    width: 100%;
+    padding: 14px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.employee-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.employee-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.employee-card h3 {
+    color: #2563eb;
+}
+
+.error {
+    color: red;
+}
+
+.search-input:focus {
+    outline: none;
+    border: 1px solid #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+@media (max-width: 600px) {
+    .employee-list {
+        grid-template-columns: 1fr;
+    }
+}
